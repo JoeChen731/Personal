@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background for the html and body elements */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  margin-top: 50%;
+  font-family: Brush Script MT;
+  left: 1%;
+}
+
+.animation-container {
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  background-color: white;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: auto;
+}
+
+/* body {
+  background-image: url(../img/Joe/chen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden; 
+} */
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 15%;
+  transform: translateY(-50%);
+  animation: rotateText 5s infinite;
+}
+
+/* Style the logo image */
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-container span {
+  transform-origin: center;
+  animation: rotateText 5s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover; /* Adjust background size for smaller screens */
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+a {
+  display: none; /* Hide the link initially */
+}

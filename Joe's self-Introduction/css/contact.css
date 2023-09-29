@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove list bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display list items horizontally */
+  justify-content: flex-end; /* Center the list items horizontally */
+}
+
+.navbar li {
+  margin: 20px; /* Add spacing between list items */
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.navbar-menu li:first-child {
+  margin-left: 0;
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underlines from links */
+  color: black; /* Text color for links */
+  padding: 10px 20px; /* Add padding to the links */
+  font-weight: bold; /* Make the text bold */
+}
+
+.navbar a:hover {
+  background-color: beige; /* Background color on hover */
+}
+.Contact-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/Joe/Cj.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text_heading {
+  font-family: "Arial", sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0.1rem solid beige;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #aaa;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+
+.form-input:focus {
+  color: black;
+  border: 0.1rem solid red;
+}
+
+.textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.submit-button {
+  width: 20rem;
+  height: 5rem;
+  background-color: beige;
+  border: none;
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+  margin-left: 18rem;
+  margin-top: 5rem;
+}
+
+.submit-button:hover {
+  color: red;
+}

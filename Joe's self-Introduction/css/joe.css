@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../img/Joe/Cj.jpg);
+}
+
+/* Add styles for the navbar */
+.navbar {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove list bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display list items horizontally */
+  justify-content: flex-end; /* Center the list items horizontally */
+}
+
+.navbar li {
+  margin: 20px; /* Add spacing between list items */
+  cursor: pointer;
+}
+
+.navbar-menu li:first-child {
+  margin-left: 0;
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underlines from links */
+  color: black; /* Text color for links */
+  padding: 10px 20px; /* Add padding to the links */
+  font-weight: bold; /* Make the text bold */
+}
+
+.navbar a:hover {
+  background-color: beige; /* Background color on hover */
+}
+
+/* .container {
+} */
+
+.animation-container {
+  text-align: center;
+  position: relative;
+}
+
+/* Style the logo */
+.logo-container {
+  position: absolute; /* Add position: absolute; to the logo */
+  top: 0%; /* Position the logo vertically in the middle of the circle */
+  left: 0%; /* Position the logo horizontally in the middle of the circle */
+  transform: translate(-50%, -50%) rotate(0deg); /* Center the logo precisely */
+  width: 300px;
+  margin-top: 10px;
+  animation: pulse 5s infinite;
+}
+
+/* Style the logo image */
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photo-container {
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.photo-container img {
+  max-width: 30%;
+  max-height: 30%;
+  text-align: center;
+  border-radius: 60%;
+  animation: rotateText 5s infinite;
+}
+
+.text-container {
+  font-family: Brush Script MT;
+  font-size: x-large;
+}
+.text-container:hover {
+  transform: scale(2.2);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media screen and (max-width: 268px) {
+  body {
+    background-size: cover; /* Adjust background size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .navbar {
+    position: static; /* Remove the fixed position */
+    background-color: transparent; /* Make the background transparent */
+    padding: 10px 0; /* Add some padding to create space */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack list items vertically */
+    text-align: center; /* Center-align the links */
+  }
+
+  .navbar li {
+    margin: 5px 0; /* Reduce the margin between list items */
+  }
+
+  .navbar a {
+    display: block; /* Display links as blocks to fill the width */
+    padding: 10px 0; /* Adjust padding for better spacing */
+  }
+
+  .logo-container {
+    position: static; /* Remove the absolute position */
+    text-align: center; /* Center-align the logo */
+    width: 100%; /* Make the logo container full-width */
+    margin-top: 20px; /* Add some margin to separate the logo from the navbar */
+  }
+}

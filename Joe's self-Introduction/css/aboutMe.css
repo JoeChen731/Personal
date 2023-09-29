@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../img/Joe/Cj.jpg);
+}
+/* Style for the container */
+.container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 15rem;
+}
+
+/* Style for headings */
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Style for paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: gray;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Style for the introduction section */
+.about-intro {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Style for hobby and favorite sections */
+.my-hobby,
+.favorite-food,
+.favorite-things {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

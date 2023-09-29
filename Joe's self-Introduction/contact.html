@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <div class="Contact-container">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="./Joe.html">Home</a></li>
+            <li><a href="./Project.html">Project</a></li>
+            <li><a href="./Resume.html">Resume</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact-form">
+        <h2 class="text_heading">Contact me!</h2>
+        <form
+          action="send_email.php"
+          method="GET"
+          onsubmit="return validateName()"
+        >
+          <hr />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+            placeholder="Please enter your name"
+            class="form-input"
+            required
+          />
+          <br />
+          <input
+            type="email"
+            name="email"
+            autocomplete="off"
+            placeholder="Please enter your email"
+            class="form-input"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            autocomplete="off"
+            placeholder="Subject"
+            class="form-input"
+            required
+          />
+          <textarea
+            name="message"
+            class="form-input textarea"
+            placeholder="Message"
+          ></textarea>
+          <!-- <input type="submit" class="submit-button" value="Submit Form" /> -->
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <!-- <div class="thank-you-container" style="display: none">
+          <p>Thank you for submitting the form!</p>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
